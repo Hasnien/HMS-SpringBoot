@@ -12,7 +12,7 @@ public class SpringHmsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringHmsApplication.class, args);
-		System.out.println("Hello Spring");
+		System.out.println("Test Compilation for \"Spring HMS\"");
 //		List<PathologicalTest> Tests = new ArrayList<>();
 
 	}

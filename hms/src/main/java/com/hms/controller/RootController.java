@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RootController {
+
     @RequestMapping(value="/",method= RequestMethod.GET)
     public String root(){
-        return "Hello Spring";
-    }
+        return "Hello Spring";}
+
+    @RequestMapping(value = "/test",method = RequestMethod.GET )
+    public String testURL(){return "Hello testURL";}
 }

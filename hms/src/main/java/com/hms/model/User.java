@@ -5,23 +5,26 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
 
 @Entity
+@Getter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int mid;
-    @Getter
+    @Setter
     private String username;
     @Setter
     private String password;
-    @Getter
+
     private String fullName;
-    @Getter
+
     private String phone;
-    @Getter
+
     private int age;
-    @Getter
+
     private char sex;
     private String address;
     private String userType;
